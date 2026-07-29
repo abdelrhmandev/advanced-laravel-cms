@@ -11,7 +11,7 @@ use App\Livewire\Admin\CMS\ActivityLogs\Index;
 use App\Livewire\Admin\Header\HandleLogout;
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('backoffice')
+Route::prefix('control-panel')
     ->name('admin.')
     ->group(function () {
         Route::middleware('guest:admin')->group(function () {

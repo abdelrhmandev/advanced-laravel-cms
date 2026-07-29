@@ -16,7 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         $middleware->redirectGuestsTo(function (Request $request) {
-            if ($request->is('backoffice/*') || $request->is('backoffice')) {
+            if ($request->is('control-panel/*') || $request->is('control-panel')) {
                 return route('admin.login');
             }
             return route('login');

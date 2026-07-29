@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
 
         $user = User::create([
             'password' => Hash::make('12345678'),
-            'email' => 'abdelrahman@invent.solutions',
+            'email' => 'abdelrahman@domain.com',
             'name' => 'Abdelrahman El Monshed',
         ]);
 
@@ -34,7 +34,7 @@ class DatabaseSeeder extends Seeder
 
         $user = User::create([
             'password' => Hash::make('12345678'),
-            'email' => 'writer@invent.solutions',
+            'email' => 'writer@domain.com',
             'name' => 'Writer',
         ]);
 

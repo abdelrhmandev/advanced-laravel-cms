@@ -49,7 +49,7 @@ class ResetPassword extends Component
         }
 
         session()->flash('status', __($status));
-        $this->redirect('/backoffice', navigate: true);
+        $this->redirect('/control-panel', navigate: true);
     }
 
     public function render()
